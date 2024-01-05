@@ -1,0 +1,56 @@
+instalar react de forma global
+npm i -g create-react-app nombre
+
+crear un proyecto nuevo de react
+create-react-app nombre
+
+inyectar preprocesador de css saas 
+npm i --save node-sass
+
+inyectar bootstrap
+npm i bootstrap --save
+
+inyectar bootstrap-icons
+npm i bootstrap-icons
+
+inyectar axios para peticiones http
+npm i axios
+
+Sesión 13 hablamos de formik, yup y materialui para formularios en react
+formik -> para formularios
+yup -> para los schemas de validación de los datos
+https://formik.org
+npm i formik !Para instalar formik
+npm i yup !Para instalar yup
+
+inyectar react-router-dom para gestionar las rutas(hay varios gestores de rutas)
+npm install --save react-router-dom
+
+inyectar materialui para componentes ya hechos para react
+npm install @mui/material @emotion/react @emotion/styled
+
+inyectar material icons para iconos 
+npm install @mui/icons-material
+
+
+inyectar herramienta para trabajar con className
+npm i --save clsx
+
+inyectar rxjs para poder trabajar con observables(tipo de promesa con multiples elementos)
+npm i rxjs
+
+Usamos la api fesfull resreq.in para probar las peticiones http
+La api randomuser.me te crea usuarios random los que necesites según
+la petición que hagamos(mirar la documentación de la api)
+
+redux dependencia que nos ayuda a gestionar el estado de la aplicación
+npm i redux react-redux
+npm i redux-devtools-extension -dev //solo la usamos en modo desarrollador
+
+redux-saga dependencia para gestionar estados async await
+npm i redux-saga
+
+Cargamos la dependencia Testeo junto con la que ya viene en create-react-app
+
+npm i -D react-test-renderer // -D equivale a --save-dev
+

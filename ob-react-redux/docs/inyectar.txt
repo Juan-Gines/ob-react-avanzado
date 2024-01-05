@@ -1,0 +1,6 @@
+redux dependencia que nos ayuda a gestionar el estado de la aplicación
+npm i redux react-redux
+npm i redux-devtools-extension -dev //solo la usamos en modo desarrollador
+
+redux-saga dependencia para gestionar estados async await
+npm i redux-saga

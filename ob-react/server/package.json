@@ -1,0 +1,25 @@
+{
+  "name": "ob-react",
+  "version": "1.0.0",
+  "description": "Servidor para el curso ob react avanzado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 8000"
+  },
+  "keywords": [
+    "serviceWorker",
+    "react",
+    "avanzado"
+  ],
+  "author": "Juan Ginés",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "web-push": "^3.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

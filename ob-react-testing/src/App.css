@@ -1,0 +1,27 @@
+body {
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+}
+
+.lista-notas {
+	list-style-type: none;
+}
+
+.lista-notas div {
+	padding: 10px 5px;
+	background-color: tomato;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: solid 2px white;
+}
+
+.input-nueva-nota input {
+	outline: none;
+	padding: 10px 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 10px #fff;
+  margin-bottom: 10px;
+  margin-right:  5px;
+}

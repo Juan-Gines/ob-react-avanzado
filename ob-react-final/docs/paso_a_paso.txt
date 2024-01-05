@@ -1,0 +1,83 @@
+Comenzamos el proyecto con el package.json y lo creamos con:
+- npm init (y le damos un nombre, luego versión, descripción, entry point, test command, repositorio de git, keys reservadas, author, licencia)
+
+Siguiente necesitamos @babel ojo en dev dependencies (incorrecto)
+- npm i @babel/cli
+- npm i @babel/core
+- npm i @babel/preset-env @babel/preset-react
+
+Babel ira en devdependencies o sea que lo instalamos así (correcto)
+- npm i --save-dev @babel/cli @babel/core @babel/preset-env @babel/preset-react
+- npm i --save-dev babel-loader (loader de babel)
+- npm i --save-dev css-loader (loader de css)
+- npm i --save-dev documentation (nos permite documentar facilmente)
+- npm i --save-dev eslint (para fijar reglas para el proyecto)
+
+webpack para empaquetar el proyecto y subirlo a un servidor
+- npm i --save-dev webpack webpack-cli webpack-dev-server
+
+Utilizar sass o scss y configurar la build
+- npm i --save-dev node-sass sass-loader
+
+Utilizamos para crear una plantilla
+- npm i --save-dev html-webpack-plugin
+
+Minificar el css
+- npm i --save-dev mini-css-extract-plugin
+
+crea un codigo original nuestro desenpaquetandolo y poder verlo bien
+- npm i --save-dev file-loader source-map-loader
+
+Ahora instalamos dependencias del proyecto ya no de desarrollo react
+- npm i --save react react-dom react-router-dom
+
+instalamos redux
+- npm i redux react-redux redux-saga
+
+instalamos para transformar en commonjs para el standard mas bajo
+- npm i --save-dev @babel/plugin-transform-modules-commonjs
+
+instalamos para transformar en tiempo reglas
+- npm i --save-dev @babel/plugin-transform-runtime
+
+Instalamos axios y bootstrap
+- npm i --save axios bootstrap
+
+Procedemos a configurar babel en el archivo .babelrc
+configurar los presets importante, el resto lo vamos configurando
+
+Procedemos a configurar el vsc con .editorconfig
+Caracteristicas que va a tener el editor mientras codificamos
+
+Creamos el index.html el que va a ser nuestro archivo entrada
+
+Creamos webpack.config.js con las configuraciones para el empaquetado de los archivos js jsx css scss sass
+
+ahora vamos a iniciar eslint para las reglas de los archivos:
+si no lo tenemos instalado en el pc:
+- npm install -g eslint (lo instalamos globalmente)
+- eslint --init
+- elegimos la 3ra opcion
+- elegimos al opción import export ESM
+- elegimos react
+- typeScript no de momento
+- ahora podemos elegir browser y node con espacio o solo una de las 2
+- ahora elegimos el estilo para el proyecto
+- elegimos airbnb
+- config file en json
+
+DESPLEGAR EN NETLIFY
+- Primero ejecutamos las build para ver si funcionan correctamente
+- npm run build
+- npm run build:Prod
+Con esto webpack nos genera los bundle que contendran nuestra aplicación empaquetada y lista para desarrollo o producción
+
+Necesitamos agregar la dependencia netlify-cli en el proyecto
+- npm install --save-dev netlify-cli
+
+TESTING LIBRARIES
+Necesitamos instalar las librerias de testing (miramos en jestjs.io)
+npm install --save-dev jest
+
+Y también testing-library de react https://testing-library.com/docs/react-testing-library/intro/
+npm install --save-dev @testing-library/react
